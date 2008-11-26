@@ -1,0 +1,6 @@
+style "user-font"
+{
+  fontset="-*-tahoma-*-*-*-*-9-*-*-*-p-*-*"
+}
+widget_class "*" style "user-font"
+

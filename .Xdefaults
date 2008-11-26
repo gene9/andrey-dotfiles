@@ -1,0 +1,88 @@
+
+! Color stuff
+*customization: -color
+
+! xterm
+xterm*background: Black
+xterm*foreground: Wheat
+xterm*saveLines: 3000
+
+! This one is from Vitus Varger
+! Change font size in xterm using shift + mouse wheel
+! With fixes from Anton Kovalenko
+xterm.vt100.translations: #override\n\
+                    Shift<Btn4Down>:smaller-vt-font()\n\
+                    Shift<Btn5Down>:larger-vt-font()\n\
+
+
+xterm.fontMenu.Label:  VT Fonts zzz
+
+*fontMenu*fontdefault*Label:    Default
+*fontMenu*font1*Label:  Unreadable
+
+*VT100.font:            6x10
+*VT100.font1:           6x13
+
+*IconFont:              6x10
+
+*fontMenu*font2*Label:  Tiny
+*VT100.font2:           5x7
+
+*fontMenu*font3*Label:  Small
+*VT100.font3:           6x10
+
+*fontMenu*font4*Label:  Medium
+*VT100.font4:           6x13
+
+*fontMenu*font5*Label:  Large
+*VT100.font5:           9x15
+
+*fontMenu*font6*Label:  Huge
+*VT100.font6:           10x20
+
+!X C A L C 
+xcalc*geometry: 200x275
+xcalc.ti.bevel.background: #111111
+xcalc.ti.bevel.screen.background: #000000
+xcalc.ti.bevel.screen.DEG.background: #000000
+xcalc.ti.bevel.screen.DEG.foreground: LightSeaGreen
+xcalc.ti.bevel.screen.GRAD.background: #000000
+xcalc.ti.bevel.screen.GRAD.foreground: LightSeaGreen
+xcalc.ti.bevel.screen.RAD.background: #000000
+xcalc.ti.bevel.screen.RAD.foreground: LightSeaGreen
+xcalc.ti.bevel.screen.INV.background: #000000
+xcalc.ti.bevel.screen.INV.foreground: Red
+xcalc.ti.bevel.screen.LCD.background: #000000
+xcalc.ti.bevel.screen.LCD.foreground: LightSeaGreen
+xcalc.ti.bevel.screen.LCD.shadowWidth: 0
+xcalc.ti.bevel.screen.M.background: #000000
+xcalc.ti.bevel.screen.M.foreground: LightSeaGreen
+xcalc.ti.bevel.screen.P.background: #000000
+xcalc.ti.bevel.screen.P.foreground: Yellow
+xcalc.ti.Command.foreground: White
+xcalc.ti.Command.background: #777777
+xcalc.ti.button5.background: Orange3
+xcalc.ti.button19.background: #611161
+xcalc.ti.button18.background: #611161
+xcalc.ti.button20.background: #611111
+xcalc.ti.button25.background: #722222
+xcalc.ti.button30.background: #833333
+xcalc.ti.button35.background: #944444
+xcalc.ti.button40.background: #a55555
+xcalc.ti.button22.background: #222262
+xcalc.ti.button23.background: #222262
+xcalc.ti.button24.background: #222272
+xcalc.ti.button27.background: #333373
+xcalc.ti.button28.background: #333373
+xcalc.ti.button29.background: #333373
+xcalc.ti.button32.background: #444484
+xcalc.ti.button33.background: #444484
+xcalc.ti.button34.background: #444484
+xcalc.ti.button37.background: #555595
+xcalc.ti.button38.background: #555595
+xcalc.ti.button39.background: #555595
+XCalc*Cursor:                 hand2
+XCalc*ShapeStyle:             rectangle
+
+! ---
+!

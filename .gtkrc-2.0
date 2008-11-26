@@ -1,0 +1,8 @@
+style "user-font"
+{
+  fontset="-microsoft-tahoma-medium-r-normal-*-9-*-*-*-p-*-*"
+}
+widget_class "*" style "user-font"
+
+gtk-font-name = "Tahoma 8"
+

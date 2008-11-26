@@ -1,0 +1,120 @@
+
+if [ -f /opt/eHealth/nethealthrc.sh ]; then
+. /opt/eHealth/nethealthrc.sh
+fi
+
+export CMSHOME=/home/cms
+export CMS_NH_DB=oracle
+
+if [ `uname` != "HP-UX" ]; then
+    export TARGET_OS=sunOs.5.4
+else
+    export TARGET_OS=hpUx.11.0
+fi
+
+# CC/CQ stuff
+export CQCC_SERVER=shelob
+export CQCC_SERVERROOT=cqweb
+
+# Merge Xresources with main database
+if [ ! -z $DISPLAY ]; then
+    xrdb -merge ~/.Xresources
+fi
+
+# Yes, I'd like to keep huge history
+export HISTSIZE=5000
+
+# ClearCase
+alias nautilus_inc_save="cleartool setview andreys_nautilus_inc_save; cleartoll pwv"
+alias andreys_58="cleartool setview andreys_58; cleartool pwv"
+
+# Other
+alias lsv="cleartool lsview"
+alias l="ls"
+alias ll="ls -l"
+alias Grep="grep"
+
+if [ `uname` == "HP-UX" ]; then
+    alias vim="/usr/local/bin/gvim"
+else
+    alias vim="/home/eng/asidorenko/vim/vim -g"
+fi
+
+alias wsc="cd /vobs/wsCore"
+alias wsa="cd /vobs/wsApps"
+alias cdf="cd /vobs/frameworks/cdf"
+alias dulib="cd /vobs/frameworks/cdf/duLib"
+alias duinc="cd /vobs/frameworks/include/cdf"
+alias em="emacs"
+alias ora="cd /vobs/wsCore/oracle"
+
+history_control=ignoredups
+
+export VIM=/home/eng/asidorenko/vim/vim62
+
+if [ `uname` == "HP-UX" ]; then
+    export PATH=$PATH:/home/cms/bin:/home/cms/bin/hpUx.11.0:/usr/atria/bin:/home/dmz/asidorenko/bin:/home/tools/bin
+else
+    export PATH=$PATH:/home/cms/bin:/home/cms/bin/sunOs.5.4:/usr/atria/bin:/home/dmz/asidorenko/bin:/home/tools/bin:/home/dmz/asidorenko/pytho/bin
+fi
+
+if [ -z $CLEARCASE_ROOT ]; then
+    export PS1='[\u@\h:\W]$ '
+else
+    export PS1Z=`echo $CLEARCASE_ROOT|awk -F/ '{ print $NF }'`
+    export PS1='{$PS1Z} \h:\W $ '
+fi
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/eng/asidorenko/vim
+export TMPDIR=/tmp
+
+ldpath() {
+    export LD_LIBRARY_PATH=/vobs/top/frameworks/sharedLib/sunOs.5.4:$LD_LIBRARY_PATH
+}
+
+d() {
+    [ ! -z $1 ] && export DISPLAY=$1
+    echo $DISPLAY
+}
+
+lscome() {
+    cleartool lsco -me -cview
+}
+
+forcemerge() {
+    echo "FORCE Merging all checked out files in current dir"
+
+    for f in `cleartool lsco -me -cview -s`; do
+        ver=`cleartool lshist -bra firebird $f | head -1 | cut -f3 -d'@'`
+        ver=`echo $ver | cut -f1 -d'"'`
+        branch=`echo $ver | cut -f3 -d'/'`
+        cleartool merge -to $f -g -version $ver
+    done
+
+}
+
+amerge() {
+    echo "Merging all checked out files in current dir"
+
+    for f in `cleartool lsco -me -cview -s`; do
+        ver=`cleartool ls $f | cut -f3 -d' '`
+        cleartool findm $f -fversion $ver -unres -gmerge
+    done
+
+}
+
+sv() {
+    echo "Setting view..."
+    cleartool setview $1
+    echo $1 > ~/.sv.last
+}
+
+# Restore view
+
+export DISPLAY=tswindev20:0.0
+. /home/eng/asidorenko/.cmsrc.bash_aliases
+. ~/src/csh-compat
+
+if [ ! -z $PS1Z ]; then
+    title "$PS1Z"
+fi
