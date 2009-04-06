@@ -57,6 +57,9 @@ else
      echoerr "Sorry, this version of (g)vim was not compiled with +multi_byte"
 endif 
 
+" disable BOM     
+set nobomb
+
 " taglist
 "map <C-T> :TlistToggle<CR>
 "imap <C-T> <esc>:TlistToggle<CR><ins>

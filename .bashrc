@@ -1,4 +1,34 @@
 
+# Home stuff
+
+export SVN_EDITOR=gvim
+export PATH=~/bin:/usr/lib/erlang/bin:$PATH
+export PATH=~/bin/dmd/linux/bin:$PATH
+export PATH=~/projects/llvm/Debug/bin:$PATH
+export BOOST_ROOT=~/projects/boost_1_38_0
+export BOOST_INCLUDEDIR=~/projects/boost_1_38_0
+export BOOST_LIBRARYDIR=~/projects/boost_1_38_0/stage/lib
+
+export THREAD_POOL_INCLUDE_DIR=~/projects/kvdb/src/external/threadpool
+export LOGGING_INCLUDE_DIR=~/projects/kvdb/src/external/logging
+
+alias ls="ls --color"
+alias l="ls --color"
+alias ll="ls -l --color"
+
+if [ -f `which uxterm` ]; then
+      alias xterm="uxterm"
+fi
+
+export PS1="[\u@\h \w]# "
+
+[ -f /etc/bash_completion ] && . /etc/bash_completion
+
+export NTWU="nanotw"
+export NTWP=""
+
+# Concord stuff
+
 if [ -f /opt/eHealth/nethealthrc.sh ]; then
 . /opt/eHealth/nethealthrc.sh
 fi
