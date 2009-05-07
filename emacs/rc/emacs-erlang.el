@@ -5,7 +5,7 @@
 )
 
 
-(add-to-list 'load-path "~/.emacs.d/distel/elisp")
+(add-to-list 'load-path "~/emacs/distel/elisp")
 
 (require 'distel)
 (distel-setup)
