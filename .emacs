@@ -1,12 +1,12 @@
 ;; .emacs
 
-(load "~/emacs/emacs-colors.el")
-(load "~/emacs/emacs-erlang.el")
-(load "~/emacs/emacs-keyboard.el")
-(load "~/emacs/emacs-mouse.el")
-(load "~/emacs/emacs-decoration.el")
-(load "~/emacs/emacs-flymake.el")
-(load "~/emacs/emacs-lisp.el")
+(load "~/emacs/rc/emacs-colors.el")
+(load "~/emacs/rc/emacs-erlang.el")
+(load "~/emacs/rc/emacs-keyboard.el")
+(load "~/emacs/rc/emacs-mouse.el")
+(load "~/emacs/rc/emacs-decoration.el")
+(load "~/emacs/rc/emacs-flymake.el")
+(load "~/emacs/rc/emacs-lisp.el")
 
 ;;(require 'recentf)
 ;;(require 'slime)
