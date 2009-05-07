@@ -1,5 +1,7 @@
 ;; .emacs
 
+(load "~/emacs/rc/emacs-system.el")
+
 (load "~/emacs/rc/emacs-colors.el")
 (load "~/emacs/rc/emacs-erlang.el")
 (load "~/emacs/rc/emacs-keyboard.el")

@@ -1,5 +1,10 @@
 
-(add-to-list 'load-path "/usr/lib/erlang/lib/tools-2.6.2/emacs")
+(if (eq system-type 'windows-nt)
+    (add-to-list 'load-path "D:/as/erl5.6/lib/tools-2.6/emacs")
+    (add-to-list 'load-path "/usr/lib/erlang/lib/tools-2.6.2/emacs")
+)
+
+
 (add-to-list 'load-path "~/.emacs.d/distel/elisp")
 
 (require 'distel)
@@ -18,9 +23,10 @@
 
 ;; Some Erlang customizations
 (add-hook 'erlang-mode-hook
-		  (lambda ()
-			;; when starting an Erlang shell in Emacs, default in the node name
-			(setq inferior-erlang-machine-options '("-sname" "emacs" "-mnesia" "dir" "'/home/mnesia'"))
-			;; add Erlang functions to an imenu menu
-			(imenu-add-to-menubar "imenu")))
+    (lambda ()
+	   ;; when starting an Erlang shell in Emacs, default in the node name
+	   (setq inferior-erlang-machine-options '("-sname" "emacs" "-mnesia" "dir" "'/home/mnesia'"))
+	   ;; add Erlang functions to an imenu menu
+	   (imenu-add-to-menubar "imenu")))
 
+;; ---

@@ -1,9 +1,9 @@
-(add-to-list 'load-path "~/.emacs.d/color-theme")
+(add-to-list 'load-path "~/emacs/color-theme")
 
 ;;(require 'color-theme)
 ;;(color-theme-calm-forest)
 
-(add-to-list 'load-path "~/.emacs.d/zenburn")
+(add-to-list 'load-path "~/emacs/zenburn")
 (require 'zenburn)
 (color-theme-zenburn)
 
