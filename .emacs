@@ -9,6 +9,7 @@
 (load "~/emacs/rc/emacs-decoration.el")
 (load "~/emacs/rc/emacs-flymake.el")
 (load "~/emacs/rc/emacs-lisp.el")
+(load "~/emacs/rc/emacs-factor.el")
 
 ;;(require 'recentf)
 ;;(require 'slime)
