@@ -3,7 +3,7 @@
 ;; http://www.emacswiki.org/emacs/ChangingCursorDynamically
 (add-to-list 'load-path "~/emacs/cursor-chg")
 (require 'cursor-chg)
-(toggle-cursor-type-when-idle 1) ; Turn on cursor change when Emacs is idle
+(toggle-cursor-type-when-idle 0) ; Turn off cursor change when Emacs is idle
 (change-cursor-mode 1) ; Turn on change for overwrite, read-only, and input mode
 
 ;; set default frame size
