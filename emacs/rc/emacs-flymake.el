@@ -14,3 +14,18 @@
              '("\\.erl\\'" flymake-erlang-init))
 
 (add-hook 'find-file-hook 'flymake-find-file-hook)
+
+;; do not use flymake for c, c++ and c#
+
+(setq flymake-allowed-file-name-masks 
+      (delete '("\\.c\\'" flymake-simple-make-init) 
+              flymake-allowed-file-name-masks))
+(setq flymake-allowed-file-name-masks 
+      (delete '("\\.cpp\\'" flymake-simple-make-init) 
+              flymake-allowed-file-name-masks))
+(setq flymake-allowed-file-name-masks 
+      (delete '("\\.cs\\'" flymake-simple-make-init) 
+              flymake-allowed-file-name-masks))
+
+;; ---
+
