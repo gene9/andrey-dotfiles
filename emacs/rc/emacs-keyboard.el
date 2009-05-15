@@ -40,13 +40,13 @@
 ;;(global-set-key [(control z)] 'undo)
 
 ;; Vim-like shorcut for completion (C-n)
-(global-set-key (kbd "C-n") 'hippie-expand)
+;;(global-set-key (kbd "C-n") 'hippie-expand)
 
 ;; Copy to clipboard (C-y)
 (global-set-key (kbd "C-y") 'clipboard-kill-ring-save)
 
 ;; Paste from clipboard (C-p)
-(global-set-key (kbd "C-p") 'clipboard-yank)
+;;(global-set-key (kbd "C-p") 'clipboard-yank)
 
 ;; Cut and put into clipboard (C-X)
 (global-set-key (kbd "C-S-x") 'clipboard-kill-region)
