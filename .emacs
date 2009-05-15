@@ -13,6 +13,9 @@
 (load "~/emacs/rc/emacs-factor.el")
 (load "~/emacs/rc/emacs-completion.el")
 
+;; have to be last one
+(load "~/emacs/rc/emacs-keyboard.el")
+
 (let ((fname (concat "~/emacs/rc/emacs-rc-local-" (system-name) ".el")))
     (when (file-exists-p fname)
         (load fname)))
@@ -36,11 +39,11 @@
 ;;(setq inhibit-startup-message t) ;no splash screen
 ;;(setq ls-lisp-dirs-first t) ;display dirs first in dired
 ;;(global-font-lock-mode t) ;colorize all buffers
-;;(recentf-mode 1) 
+;;(recentf-mode 1)
 
 ;; Conventional mouse/arrow movement & selection
 ;;(pc-selection-mode)
-;;(delete-selection-mode t) 
+;;(delete-selection-mode t)
 
 ;; eof
 
