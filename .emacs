@@ -11,6 +11,11 @@
 (load "~/emacs/rc/emacs-flymake.el")
 (load "~/emacs/rc/emacs-lisp.el")
 (load "~/emacs/rc/emacs-factor.el")
+(load "~/emacs/rc/emacs-completion.el")
+
+(let ((fname (concat "~/emacs/rc/emacs-rc-local-" (system-name) ".el")))
+    (when (file-exists-p fname)
+        (load fname)))
 
 ;;(require 'recentf)
 ;;(require 'slime)

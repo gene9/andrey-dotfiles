@@ -1,0 +1,13 @@
+--- company.el	Fri May 15 12:59:59 2009
++++ company.el~	Thu May 07 16:13:37 2009
+@@ -573,8 +573,8 @@
+     (company-cancel)
+     (kill-local-variable 'company-point)))
+ 
+-;;(define-globalized-minor-mode global-company-mode company-mode
+-;;  (lambda () (company-mode 1)))
++(define-globalized-minor-mode global-company-mode company-mode
++  (lambda () (company-mode 1)))
+ 
+ (defsubst company-assert-enabled ()
+   (unless company-mode
