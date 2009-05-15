@@ -1,3 +1,4 @@
+
 (add-to-list 'load-path "~/emacs/color-theme")
 
 ;;(require 'color-theme)
@@ -7,5 +8,4 @@
 (require 'zenburn)
 (color-theme-zenburn)
 
-
-
+;; ---

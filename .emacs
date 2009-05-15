@@ -11,6 +11,8 @@
 (load "~/emacs/rc/emacs-lisp.el")
 (load "~/emacs/rc/emacs-factor.el")
 (load "~/emacs/rc/emacs-completion.el")
+(load "~/emacs/rc/emacs-cedet.el")
+(load "~/emacs/rc/emacs-ecb.el")
 (load "~/emacs/rc/emacs-c-c++.el")
 
 ;; have to be last one
