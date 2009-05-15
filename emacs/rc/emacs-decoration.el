@@ -41,3 +41,4 @@
 (custom-set-variables
   '(initial-scratch-message nil))
 
+;; --
