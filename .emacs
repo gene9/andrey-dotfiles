@@ -5,13 +5,13 @@
 (load "~/emacs/rc/emacs-colors.el")
 (load "~/emacs/rc/emacs-fonts.el")
 (load "~/emacs/rc/emacs-erlang.el")
-(load "~/emacs/rc/emacs-keyboard.el")
 (load "~/emacs/rc/emacs-mouse.el")
 (load "~/emacs/rc/emacs-decoration.el")
 (load "~/emacs/rc/emacs-flymake.el")
 (load "~/emacs/rc/emacs-lisp.el")
 (load "~/emacs/rc/emacs-factor.el")
 (load "~/emacs/rc/emacs-completion.el")
+(load "~/emacs/rc/emacs-c-c++.el")
 
 ;; have to be last one
 (load "~/emacs/rc/emacs-keyboard.el")

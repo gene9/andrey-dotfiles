@@ -43,8 +43,8 @@
 ;;(global-set-key (kbd "C-n") 'hippie-expand)
 
 ;; Vim-like shorcut for completion (C-n/C-p)
-(define-key ac-complete-mode-map "\C-n" 'ac-next)
-(define-key ac-complete-mode-map "\C-p" 'ac-previous)
+;;(define-key ac-complete-mode-map "\C-n" 'ac-next)
+;;(define-key ac-complete-mode-map "\C-p" 'ac-previous)
 
 ;; Copy to clipboard (C-y)
 (global-set-key (kbd "C-y") 'clipboard-kill-ring-save)
