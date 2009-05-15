@@ -46,7 +46,7 @@
 (global-set-key (kbd "C-y") 'clipboard-kill-ring-save)
 
 ;; Paste from clipboard (C-p)
-;;(global-set-key (kbd "C-p") 'clipboard-yank)
+(global-set-key (kbd "C-p") 'clipboard-yank)
 
 ;; Cut and put into clipboard (C-X)
 (global-set-key (kbd "C-S-x") 'clipboard-kill-region)
