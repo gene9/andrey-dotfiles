@@ -9,7 +9,7 @@
 
 ;; gcc setup
 ;;(if (not (eq system-type 'windows-nt))
-(require 'semantic-gcc))
+(require 'semantic-gcc)
 
 ;; smart completions
 (require 'semantic-ia)
@@ -27,6 +27,18 @@
 ;; enable ctags for some languages:
 ;;  Unix Shell, Perl, Pascal, Tcl, Fortran, Asm
 ;;(semantic-load-enable-primary-exuberent-ctags-support)
+
+;(defface semantic-tag-boundary-face
+;  '((((class color) (background dark))
+;     (:overline "red"))
+;    (((class color) (background light))
+;     (:overline "blue")))
+;  "*Face used to show long tags in.
+;Used by decoration style: `semantic-tag-boundary'."
+;  :group 'semantic-faces)
+
+;;(custom-set-variables
+;; '(semantic-tag-boundary-face ((((class color) (background dark)) nil))))
 
 (global-semantic-idle-scheduler-mode)
 
