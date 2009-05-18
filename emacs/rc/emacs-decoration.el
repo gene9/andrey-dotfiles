@@ -13,10 +13,6 @@
 ;; disable verbose dialog answers
 (fset 'yes-or-no-p 'y-or-n-p)
 
-;; Set up layout-restore
-(add-to-list 'load-path "~/.emacs.d/layout-restore")
-(require 'layout-restore)
-
 ;; do not wrap lines
 (set-default 'truncate-lines t)
 
