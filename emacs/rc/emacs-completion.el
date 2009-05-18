@@ -13,10 +13,10 @@
 (add-to-list 'load-path "~/emacs/auto-complete")
 (require 'auto-complete)
 
-(global-auto-complete-mode t)           ;enable global-mode
-(setq ac-auto-start t)                  ;automatically start
-(setq ac-dwim t)                        ;Do what i mean
-(setq ac-override-local-map nil)        ;don't override local map
+(global-auto-complete-mode t)           ; enable global-mode
+(setq ac-auto-start nil)                  ; do not automatically start
+(setq ac-dwim t)                        ; do what i mean
+(setq ac-override-local-map nil)        ; don't override local map
 
 (setq ac-modes
       '(emacs-lisp-mode lisp-interaction-mode lisp-mode scheme-mode

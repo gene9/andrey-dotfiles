@@ -14,6 +14,7 @@
 (load "~/emacs/rc/emacs-cedet.el")
 (load "~/emacs/rc/emacs-ecb.el")
 (load "~/emacs/rc/emacs-c-c++.el")
+(load "~/emacs/rc/emacs-recentf.el")
 
 ;; have to be last one
 (load "~/emacs/rc/emacs-keyboard.el")
