@@ -26,6 +26,8 @@
 			".emacs.bmk$"
 			".bbdb$"
 			".log$"
+			"c:/VSTS200*"
+			"d:/as/projects/boost_*"
 			".ede$"
 			"^/tmp/")
 ;;      recentf-menu-filter 'recentf-arrange-by-rule

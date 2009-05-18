@@ -22,25 +22,22 @@
 
 ;;(semantic-load-enable-excessive-code-helpers)
 (semantic-load-enable-gaudy-code-helpers)
-;;(semantic-load-enable-minimum-features)
 
 ;; enable ctags for some languages:
 ;;  Unix Shell, Perl, Pascal, Tcl, Fortran, Asm
 ;;(semantic-load-enable-primary-exuberent-ctags-support)
 
-;(defface semantic-tag-boundary-face
-;  '((((class color) (background dark))
-;     (:overline "red"))
-;    (((class color) (background light))
-;     (:overline "blue")))
-;  "*Face used to show long tags in.
-;Used by decoration style: `semantic-tag-boundary'."
-;  :group 'semantic-faces)
-
 ;;(custom-set-variables
 ;; '(semantic-tag-boundary-face ((((class color) (background dark)) nil))))
 
-(global-semantic-idle-scheduler-mode)
+;;(setq semantic-idle-scheduler-idle-time 1)
+;;(global-semantic-idle-scheduler-mode)
+
+(custom-set-variables
+ '(semantic-idle-scheduler-idle-time 3)
+ '(semantic-self-insert-show-completion-function (lambda nil (semantic-ia-complete-symbol-menu (point))))
+ '(global-semantic-tag-folding-mode t nil (semantic-util-modes)))
+;;(global-semantic-folding-mode 1)
 
 (require 'imenu)
 (defun my-semantic-hook ()
