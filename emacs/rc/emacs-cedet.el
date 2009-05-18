@@ -55,7 +55,6 @@
 (if (eq system-type 'windows-nt)
   (let ((fname "C:/VS2008-TS/VC/include"))
     (when (file-accessible-directory-p fname)
-      (semantic-add-system-include fname 'c++-mode)
-      (message "ok"))))
+      (semantic-add-system-include fname 'c++-mode))))
 
 ;; ---
