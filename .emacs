@@ -11,10 +11,11 @@
 (load "~/emacs/rc/emacs-lisp.el")
 (load "~/emacs/rc/emacs-factor.el")
 (load "~/emacs/rc/emacs-completion.el")
+(load "~/emacs/rc/emacs-c-c++.el")
 (load "~/emacs/rc/emacs-cedet.el")
 (load "~/emacs/rc/emacs-ecb.el")
-(load "~/emacs/rc/emacs-c-c++.el")
 (load "~/emacs/rc/emacs-recentf.el")
+(load "~/emacs/rc/emacs-shell.el")
 
 ;; have to be last one
 (load "~/emacs/rc/emacs-keyboard.el")
