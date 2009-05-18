@@ -4,7 +4,7 @@
 (add-to-list 'load-path "~/emacs/company")
 (autoload 'company-mode "company" nil t)
 
-(require 'company)
+;;(require 'company)
 
 ;; FIXME: does not work - to check
 ;;(require 'company-bundled-completions)

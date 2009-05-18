@@ -1,5 +1,5 @@
 
-(require 'cc-mode)
+(autoload 'cc-mode "cc-mode")
 
 ;; http://www.emacswiki.org/emacs/IndentingC
 

@@ -1,6 +1,6 @@
 
 (add-to-list 'load-path "~/emacs/ecb")
 
-(require 'ecb)
+(autoload 'ecb "ecb")
 
 ;; ---

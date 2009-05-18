@@ -21,7 +21,16 @@
       (delete '("\\.c\\'" flymake-simple-make-init) 
               flymake-allowed-file-name-masks))
 (setq flymake-allowed-file-name-masks 
+      (delete '("\\.cc\\'" flymake-simple-make-init) 
+              flymake-allowed-file-name-masks))
+(setq flymake-allowed-file-name-masks 
       (delete '("\\.cpp\\'" flymake-simple-make-init) 
+              flymake-allowed-file-name-masks))
+(setq flymake-allowed-file-name-masks 
+      (delete '("\\.h\\'" flymake-simple-make-init) 
+              flymake-allowed-file-name-masks))
+(setq flymake-allowed-file-name-masks 
+      (delete '("\\.hpp\\'" flymake-simple-make-init) 
               flymake-allowed-file-name-masks))
 (setq flymake-allowed-file-name-masks 
       (delete '("\\.cs\\'" flymake-simple-make-init) 
