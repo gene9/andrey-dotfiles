@@ -2,6 +2,14 @@
 ;; Set up recentf so I can get a list of recent files when I start
 (recentf-mode 1)
 
+(setq recentf-exclude 
+  (append recentf-exclude '(
+    ".ftp:.*"
+    ".sudo:.*"
+    "c:/VSTS200*"
+    "D:/as/projects/boost_1_38_0*"
+    )))
+
 (setq recentf-arrange-by-rules-min-items 0
       recentf-arrange-by-rule-others nil
 
@@ -20,16 +28,17 @@
       recentf-max-saved-items 50
       recentf-max-menu-items  30
       recentf-menu-path nil
-      recentf-exclude '(".emacs-customize$"
-			".newsrc"
-			".etags$"
-			".emacs.bmk$"
-			".bbdb$"
-			".log$"
-			"c:/VSTS200*"
-			"d:/as/projects/boost_*"
-			".ede$"
-			"^/tmp/")
+
+;      recentf-exclude '(".emacs-customize$"
+;			".newsrc"
+;			".etags$"
+;			".emacs.bmk$"
+;			".bbdb$"
+;			".log$"
+;			"c:/VSTS200*"
+;			"d:/as/projects/boost_*"
+;			".ede$"
+;			"^/tmp/")
 ;;      recentf-menu-filter 'recentf-arrange-by-rule
       recentf-menu-title "Recentf"
       )

@@ -18,6 +18,8 @@
 (load "~/emacs/rc/emacs-shell.el")
 (load "~/emacs/rc/emacs-ocaml.el")
 
+(load "~/emacs/rc/emacs-file-editing.el")
+
 ;; have to be last one
 (load "~/emacs/rc/emacs-keyboard.el")
 

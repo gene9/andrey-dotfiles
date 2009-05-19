@@ -31,6 +31,12 @@
 ;; '(semantic-tag-boundary-face ((((class color) (background dark)) nil))))
 
 (custom-set-faces
+ '(ecb-analyse-bucket-node-face ((((class color) (background dark)) nil)))
+ '(ecb-bucket-node-face ((((class color) (background dark)) (:inherit ecb-default-general-face))))
+ '(ecb-history-bucket-node-face ((((class color) (background dark)) nil)))
+ '(ecb-history-indirect-buffer-face ((((class color) (background dark)) (:inherit ecb-history-general-face))))
+ '(ecb-mode-line-win-nr-face ((((class color) (background dark)) nil)))
+ '(ecb-source-read-only-face ((((class color) (background dark)) (:inherit ecb-default-general-face))))
  '(semantic-tag-boundary-face ((((class color) (background dark)) nil))))
 
 ;;(setq semantic-idle-scheduler-idle-time 1)
