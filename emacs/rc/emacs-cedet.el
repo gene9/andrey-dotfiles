@@ -30,6 +30,9 @@
 ;;(custom-set-variables
 ;; '(semantic-tag-boundary-face ((((class color) (background dark)) nil))))
 
+(custom-set-faces
+ '(semantic-tag-boundary-face ((((class color) (background dark)) nil))))
+
 ;;(setq semantic-idle-scheduler-idle-time 1)
 ;;(global-semantic-idle-scheduler-mode)
 
@@ -37,6 +40,7 @@
  '(semantic-idle-scheduler-idle-time 3)
  '(semantic-self-insert-show-completion-function (lambda nil (semantic-ia-complete-symbol-menu (point))))
  '(global-semantic-tag-folding-mode t nil (semantic-util-modes)))
+
 ;;(global-semantic-folding-mode 1)
 
 (require 'imenu)
@@ -45,6 +49,9 @@
 (add-hook 'semantic-init-hooks 'my-semantic-hook)
 
 (if (eq system-type 'windows-nt)
+  (add-to-list 'semantic-lex-c-preprocessor-symbol-file
+             "d:/as/projects/boost-1_38_0/boost/config.hpp")
+
   (let ((fname "D:/as/projects/boost_1_38_0"))
     (when (file-accessible-directory-p fname)
       (semantic-add-system-include fname 'c++-mode))))

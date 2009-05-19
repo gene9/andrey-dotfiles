@@ -16,4 +16,6 @@
 
 (add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
 
+(add-to-list 'auto-mode-alist '("\\.ipp?$" . c++-mode))
+
 ;; --
