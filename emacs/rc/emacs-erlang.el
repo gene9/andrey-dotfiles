@@ -1,6 +1,6 @@
 
 (if (eq system-type 'windows-nt)
-    (add-to-list 'load-path "D:/as/erl5.7.1/lib/tools-2.6/emacs")
+    (add-to-list 'load-path "D:/as/erl5.7.1/lib/tools-2.6.4/emacs")
     (add-to-list 'load-path "/usr/lib/erlang/lib/tools-2.6.2/emacs")
 )
 
