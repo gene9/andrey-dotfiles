@@ -1,3 +1,5 @@
+! Emacs
+Emacs*font:  -*-lucidatypewriter-medium-r-*-*-12-*-*-*-*-*-*-*
 
 ! Color stuff
 *customization: -color
@@ -7,6 +9,18 @@ xterm*background: Black
 xterm*foreground: Wheat
 xterm*saveLines: 3000
 
+! Another choice was from the Debian settings:
+xterm*color4: DodgerBlue2
+xterm*color12: SteelBlue2
+
+xterm*boldMode: off
+xterm*boldColors: off
+xterm*alwaysBoldMode: off
+xterm*colorBDMode: on
+xterm*boldFont:
+
+xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48,35:48
+
 ! This one is from Vitus Varger
 ! Change font size in xterm using shift + mouse wheel
 ! With fixes from Anton Kovalenko
@@ -15,30 +29,30 @@ xterm.vt100.translations: #override\n\
                     Shift<Btn5Down>:larger-vt-font()\n\
 
 
-xterm.fontMenu.Label:  VT Fonts zzz
+!xterm.fontMenu.Label:  VT Fonts zzz
 
-*fontMenu*fontdefault*Label:    Default
-*fontMenu*font1*Label:  Unreadable
+!*fontMenu*fontdefault*Label:    Default
+!*fontMenu*font1*Label:  Unreadable
 
-*VT100.font:            6x10
-*VT100.font1:           6x13
+!*VT100.font:            6x10
+!*VT100.font1:           6x13
 
-*IconFont:              6x10
+!*IconFont:              6x10
 
-*fontMenu*font2*Label:  Tiny
-*VT100.font2:           5x7
+!*fontMenu*font2*Label:  Tiny
+!*VT100.font2:           5x7
 
-*fontMenu*font3*Label:  Small
-*VT100.font3:           6x10
+!*fontMenu*font3*Label:  Small
+!*VT100.font3:           6x10
 
-*fontMenu*font4*Label:  Medium
-*VT100.font4:           6x13
+!*fontMenu*font4*Label:  Medium
+!*VT100.font4:           6x13
 
-*fontMenu*font5*Label:  Large
-*VT100.font5:           9x15
+!*fontMenu*font5*Label:  Large
+!*VT100.font5:           9x15
 
-*fontMenu*font6*Label:  Huge
-*VT100.font6:           10x20
+!*fontMenu*font6*Label:  Huge
+!*VT100.font6:           10x20
 
 !X C A L C 
 xcalc*geometry: 200x275
