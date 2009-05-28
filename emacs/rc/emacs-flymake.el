@@ -25,6 +25,7 @@
     ;;("\\.java\\'" flymake-simple-make-java-init flymake-simple-java-cleanup)
     ("[0-9]+\\.tex\\'" flymake-master-tex-init flymake-master-cleanup)
     ("\\.tex\\'" flymake-simple-tex-init)
+    ("\\.erl\\'" flymake-erlang-init)
     ;;("\\.idl\\'" flymake-simple-make-init)
     ;; ("\\.cpp\\'" 1)
     ;; ("\\.java\\'" 3)
