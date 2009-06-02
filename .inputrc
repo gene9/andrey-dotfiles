@@ -29,3 +29,5 @@ set mark-symlinked-directories on
 
 "\eOd": backward-word
 "\eOc": forward-word
+
+# ---
