@@ -43,7 +43,8 @@
 				    ("." . browse-url-firefox)))
 
 ;; http://play.org/links/lisp-setup
+(let ((fname "~/lisp-dev/HyperSpec"))
+  (when (file-accessible-directory-p fname)
+    (setq hyperspec-path fname)))
 
-(setq hyperspec-path "~/lisp-dev/HyperSpec/")
-
-;;
+;; ---

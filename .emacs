@@ -3,13 +3,29 @@
 (load "~/emacs/rc/emacs-system.el")
 
 (load "~/emacs/rc/emacs-colors.el")
+(load "~/emacs/rc/emacs-fonts.el")
 (load "~/emacs/rc/emacs-erlang.el")
-(load "~/emacs/rc/emacs-keyboard.el")
 (load "~/emacs/rc/emacs-mouse.el")
 (load "~/emacs/rc/emacs-decoration.el")
 (load "~/emacs/rc/emacs-flymake.el")
 (load "~/emacs/rc/emacs-lisp.el")
 (load "~/emacs/rc/emacs-factor.el")
+(load "~/emacs/rc/emacs-completion.el")
+(load "~/emacs/rc/emacs-c-c++.el")
+(load "~/emacs/rc/emacs-cedet.el")
+(load "~/emacs/rc/emacs-ecb.el")
+(load "~/emacs/rc/emacs-recentf.el")
+(load "~/emacs/rc/emacs-shell.el")
+(load "~/emacs/rc/emacs-ocaml.el")
+
+(load "~/emacs/rc/emacs-file-editing.el")
+
+;; have to be last one
+(load "~/emacs/rc/emacs-keyboard.el")
+
+(let ((fname (concat "~/emacs/rc/emacs-rc-local-" (system-name) ".el")))
+    (when (file-exists-p fname)
+        (load fname)))
 
 ;;(require 'recentf)
 ;;(require 'slime)
@@ -30,11 +46,11 @@
 ;;(setq inhibit-startup-message t) ;no splash screen
 ;;(setq ls-lisp-dirs-first t) ;display dirs first in dired
 ;;(global-font-lock-mode t) ;colorize all buffers
-;;(recentf-mode 1) 
+;;(recentf-mode 1)
 
 ;; Conventional mouse/arrow movement & selection
 ;;(pc-selection-mode)
-;;(delete-selection-mode t) 
+;;(delete-selection-mode t)
 
 ;; eof
 

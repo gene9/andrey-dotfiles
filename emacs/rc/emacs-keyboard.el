@@ -40,7 +40,11 @@
 ;;(global-set-key [(control z)] 'undo)
 
 ;; Vim-like shorcut for completion (C-n)
-(global-set-key (kbd "C-n") 'hippie-expand)
+;;(global-set-key (kbd "C-n") 'hippie-expand)
+
+;; Vim-like shorcut for completion (C-n/C-p)
+;;(define-key ac-complete-mode-map "\C-n" 'ac-next)
+;;(define-key ac-complete-mode-map "\C-p" 'ac-previous)
 
 ;; Copy to clipboard (C-y)
 (global-set-key (kbd "C-y") 'clipboard-kill-ring-save)
@@ -59,4 +63,4 @@
 ;;(define-key global-map (kbd "\C-k k") 'bookmark-set)
 ;;(define-key global-map (kbd "\C-k b") 'bookmark-jump)
 
-
+;; ---
