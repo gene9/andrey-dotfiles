@@ -17,6 +17,7 @@
 (load "~/emacs/rc/emacs-recentf.el")
 (load "~/emacs/rc/emacs-shell.el")
 (load "~/emacs/rc/emacs-ocaml.el")
+(load "~/emacs/rc/emacs-scala.el")
 
 (load "~/emacs/rc/emacs-file-editing.el")
 
