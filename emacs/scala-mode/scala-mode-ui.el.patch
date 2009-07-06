@@ -1,0 +1,15 @@
+*** scala-mode-ui.el	Mon Jul 06 13:28:57 2009
+--- scala-mode-ui.el-orig	Mon Jul 06 13:15:40 2009
+***************
+*** 133,137 ****
+  
+     ;; Attach keyboard Shortcuts
+!    ;;([(control tab)]            'scala-undent-line)
+     ([backspace]                'backward-delete-char-untabify)
+     		                
+--- 133,137 ----
+  
+     ;; Attach keyboard Shortcuts
+!    ([(control tab)]            'scala-undent-line)
+     ([backspace]                'backward-delete-char-untabify)
+     		                
