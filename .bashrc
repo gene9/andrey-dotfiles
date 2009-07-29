@@ -54,7 +54,7 @@ export CQCC_SERVERROOT=cqweb
 
 # Merge Xresources with main database
 if [ ! -z $DISPLAY ]; then
-    xrdb -merge ~/.Xresources
+    [ -e ~/.Xresources ] && xrdb -merge ~/.Xresources
 fi
 
 # Yes, I'd like to keep huge history
@@ -147,9 +147,9 @@ sv() {
 
 # Restore view
 
-export DISPLAY=tswindev20:0.0
-. /home/eng/asidorenko/.cmsrc.bash_aliases
-. ~/src/csh-compat
+#export DISPLAY=tswindev20:0.0
+#. /home/eng/asidorenko/.cmsrc.bash_aliases
+#. ~/src/csh-compat
 
 if [ ! -z $PS1Z ]; then
     title "$PS1Z"
