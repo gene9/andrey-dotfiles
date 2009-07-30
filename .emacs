@@ -19,6 +19,8 @@
 (load "~/emacs/rc/emacs-ocaml.el")
 (load "~/emacs/rc/emacs-scala.el")
 
+(load "~/emacs/rc/emacs-daemon.el")
+
 (load "~/emacs/rc/emacs-file-editing.el")
 
 ;; have to be last one
