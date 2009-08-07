@@ -5,7 +5,7 @@
 
 (defun my-done ()
   (interactive)                                                                                     
-  (server-edit)
+;;  (server-edit)
   (make-frame-invisible nil t))                                                                     
 
 (if (memq window-system '(win32 w32))
