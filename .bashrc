@@ -73,7 +73,10 @@ alias Grep="grep"
 if [ `uname` == "HP-UX" ]; then
     alias vim="/usr/local/bin/gvim"
 else
-    alias vim="/home/eng/asidorenko/vim/vim -g"
+    if [ `uname` != "Linux" ]; then
+        alias vim="/home/eng/asidorenko/vim/vim -g"
+        export VIM=/home/eng/asidorenko/vim/vim62
+    fi
 fi
 
 alias wsc="cd /vobs/wsCore"
@@ -86,7 +89,6 @@ alias ora="cd /vobs/wsCore/oracle"
 
 history_control=ignoredups
 
-export VIM=/home/eng/asidorenko/vim/vim62
 
 if [ `uname` == "HP-UX" ]; then
     export PATH=$PATH:/home/cms/bin:/home/cms/bin/hpUx.11.0:/usr/atria/bin:/home/dmz/asidorenko/bin:/home/tools/bin
