@@ -1,6 +1,7 @@
 ;; .emacs
 
 (load "~/emacs/rc/emacs-system.el")
+(load "~/emacs/rc/emacs-misc.el")
 
 (load "~/emacs/rc/emacs-colors.el")
 (load "~/emacs/rc/emacs-fonts.el")
@@ -18,6 +19,8 @@
 (load "~/emacs/rc/emacs-shell.el")
 (load "~/emacs/rc/emacs-ocaml.el")
 (load "~/emacs/rc/emacs-scala.el")
+(load "~/emacs/rc/emacs-csharp.el")
+(load "~/emacs/rc/emacs-clojure.el")
 
 (load "~/emacs/rc/emacs-daemon.el")
 
