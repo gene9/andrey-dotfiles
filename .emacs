@@ -21,6 +21,7 @@
 (load "~/emacs/rc/emacs-scala.el")
 (load "~/emacs/rc/emacs-csharp.el")
 (load "~/emacs/rc/emacs-clojure.el")
+(load "~/emacs/rc/emacs-slime.el")
 
 (load "~/emacs/rc/emacs-daemon.el")
 
