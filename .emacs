@@ -22,6 +22,8 @@
 (load "~/emacs/rc/emacs-csharp.el")
 (load "~/emacs/rc/emacs-clojure.el")
 (load "~/emacs/rc/emacs-slime.el")
+(load "~/emacs/rc/emacs-browser.el")
+(load "~/emacs/rc/emacs-w3m.el")
 
 (load "~/emacs/rc/emacs-daemon.el")
 
@@ -34,39 +36,8 @@
     (when (file-exists-p fname)
         (load fname)))
 
-;;(require 'recentf)
-;;(require 'slime)
-;;(require 'easymenu)
-;;(require 'erc)
-
-;; enable visual feedback on selections
-;;(setq transient-mark-mode t)
-
-;; default to better frame titles
-;;(setq frame-title-format
-;;      (concat  "%b - emacs@" (system-name)))
-
-;; default to unified diffs
-;;(setq diff-switches "-u")
-
-;; Misc
-;;(setq inhibit-startup-message t) ;no splash screen
-;;(setq ls-lisp-dirs-first t) ;display dirs first in dired
-;;(global-font-lock-mode t) ;colorize all buffers
-;;(recentf-mode 1)
-
-;; Conventional mouse/arrow movement & selection
-;;(pc-selection-mode)
-;;(delete-selection-mode t)
-
-;;; This was installed by package-install.el.
-;;; This provides support for the package system and
-;;; interfacing with ELPA, the package archive.
-;;; Move this code earlier if you want to reference
-;;; packages in your .emacs.
-(when
-    (load
-     (expand-file-name "~/.emacs.d/elpa/package.el"))
-  (package-initialize))
+;; Local Variables:
+;; no-byte-compile: t
+;; End: 
 
 ;; ---

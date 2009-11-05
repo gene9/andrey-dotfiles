@@ -23,6 +23,7 @@
 (eval-after-load "slime"
   '(progn
      (slime-setup '(slime-fancy slime-asdf slime-banner slime-fuzzy slime-autodoc slime-repl))
+     (define-key global-map (kbd "<f9>") 'slime-selector)
      (setq slime-complete-symbol*-fancy t)
      (setq slime-complete-symbol-function 'slime-fuzzy-complete-symbol)
      (setq slime-lisp-implementations
