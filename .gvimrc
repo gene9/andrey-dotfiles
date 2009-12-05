@@ -1,4 +1,8 @@
 
+" Set omni menu colors
+hi Pmenu guibg=#333333
+hi PmenuSel guibg=#555555 guifg=#ffffff
+
 " It's not vi
 set nocompatible
 
