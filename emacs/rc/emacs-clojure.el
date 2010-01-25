@@ -1,3 +1,4 @@
+
 (add-to-list 'load-path "~/emacs/clojure-mode")
 (add-to-list 'load-path "~/emacs/swank-clojure/src/emacs/swank-clojure.el")
 (add-to-list 'load-path "~/emacs/swank-clojure/src/emacs")
@@ -7,10 +8,10 @@
 
 ;;(require 'clojure-mode)
 
-(defun alexott/clojure-mode-hook ()
-  "Hook for Clojure mode"
-  )
-(add-hook 'clojure-mode-hook 'alexott/clojure-mode-hook)
+;;(defun alexott/clojure-mode-hook ()
+;;  "Hook for Clojure mode"
+;;  )
+;;(add-hook 'clojure-mode-hook 'alexott/clojure-mode-hook)
 
 (setq swank-clojure-jar-path "~/emacs/clojure/clojure.jar"
       swank-clojure-extra-classpaths (list
