@@ -36,16 +36,7 @@
                       ;;other-jar
                       " clojure.main")))
 
-;;(setq swank-clojure-binary clj)
-
 (require 'swank-clojure-autoload)
 
-;; slime
-;;(eval-after-load "slime"
-;;  '(progn (slime-setup '(slime-repl))))
-
-;;(add-to-list 'load-path "~/opt/slime")
-;;(require 'slime)
-;;(slime-setup)
-
+;; ---
  
