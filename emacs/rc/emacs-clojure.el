@@ -1,4 +1,5 @@
 (add-to-list 'load-path "~/emacs/clojure-mode")
+(add-to-list 'load-path "~/emacs/swank-clojure/src/emacs/swank-clojure.el")
 (add-to-list 'load-path "~/emacs/swank-clojure/src/emacs")
 
 (autoload 'clojure-mode "clojure-mode" "A major mode for Clojure" t)
@@ -21,16 +22,19 @@
 
 (setq other-jar "")
 
-(setq clj
+(setq swank-clojure-binary "clj-cmd")
+(defvar clj-cmd)
+(setenv "CLJ_CMD"
+    (setq clj-cmd
               (concat "java "
 ;;                      "-server "
                       "-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8888 "
                       "-cp "
                       (concat clojure-home "clojure.jar:")
                       (concat clojure-home "clojure-contrib.jar:")
-                      (concat clojure-home "swank-clojure.jar:")
-                      other-jar
-                      " clojure.lang.Repl"))
+                      (concat (expand-file-name "~") "/emacs/swank-clojure/src/main/clojure")
+                      ;;other-jar
+                      " clojure.main")))
 
 ;;(setq swank-clojure-binary clj)
 
