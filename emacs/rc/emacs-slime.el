@@ -32,6 +32,14 @@
              ,@slime-lisp-implementations))
      ))
 
+;; http://davidhilton.wordpress.com/2008/11/25/a-little-clojure/
+;;(add-hook ’slime-connected-hook ’slime-redirect-inferior-output)
+
+;; http://bc.tech.coop/blog/081120.html
+(add-hook 'slime-connected-hook (lambda ()
+				  (interactive)
+				  (slime-redirect-inferior-output)))
+
 (global-set-key [f5] 'slime)
 (global-set-key [(control f11)] 'slime-selector)
 
