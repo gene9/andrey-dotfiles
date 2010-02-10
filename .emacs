@@ -3,6 +3,7 @@
 (load "~/emacs/rc/emacs-system.el")
 (load "~/emacs/rc/emacs-misc.el")
 
+(load "~/emacs/rc/emacs-tabbar.el")
 (load "~/emacs/rc/emacs-colors.el")
 (load "~/emacs/rc/emacs-fonts.el")
 (load "~/emacs/rc/emacs-erlang.el")
