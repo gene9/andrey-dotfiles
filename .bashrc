@@ -4,7 +4,8 @@ echo "stalonetray"
 
 # Home stuff
 
-[ -f ~/bin/django-bash-completion ] && . ~/bin/django-bash-completion
+# FIXME: does not work for some reason
+#[ -f ~/bin/django-bash-completion ] && . ~/bin/django-bash-completion
 
 . /usr/GNUstep/System/Library/Makefiles/GNUstep.sh
 
