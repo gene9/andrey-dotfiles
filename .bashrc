@@ -1,5 +1,16 @@
+# notes
+
+echo "stalonetray"
 
 # Home stuff
+
+. /usr/GNUstep/System/Library/Makefiles/GNUstep.sh
+
+export GOROOT=/home/andrey/projects/go
+export GOOS=linux
+export GOARCH=386
+export GOBIN=/home/andrey/bin/go-bin
+export PATH=$GOBIN:$PATH
 
 export SVN_EDITOR=gvim
 
