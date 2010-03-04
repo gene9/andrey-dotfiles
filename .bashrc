@@ -4,6 +4,8 @@ echo "stalonetray"
 
 # Home stuff
 
+[ -f ~/bin/django-bash-completion ] && . ~/bin/django-bash-completion
+
 . /usr/GNUstep/System/Library/Makefiles/GNUstep.sh
 
 export GOROOT=/home/andrey/projects/go
