@@ -3,7 +3,6 @@
 echo "stalonetray"
 
 # Home stuff
-
 # FIXME: does not work for some reason
 #[ -f ~/bin/django-bash-completion ] && . ~/bin/django-bash-completion
 
