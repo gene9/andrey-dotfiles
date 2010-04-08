@@ -7,7 +7,7 @@ echo "stalonetray"
 # FIXME: does not work for some reason
 #[ -f ~/bin/django-bash-completion ] && . ~/bin/django-bash-completion
 
-. /usr/GNUstep/System/Library/Makefiles/GNUstep.sh
+[ -f /usr/GNUstep/System/Library/Makefiles/GNUstep.sh ] && . /usr/GNUstep/System/Library/Makefiles/GNUstep.sh
 
 export GOROOT=/home/andrey/projects/go
 export GOOS=linux
@@ -36,7 +36,7 @@ alias ls="ls --color"
 alias l="ls --color"
 alias ll="ls -l --color"
 
-if [ -f `which uxterm` ]; then
+if [ -f `which uxterm 2>/dev/null` ]; then
       alias xterm="uxterm"
 fi
 
