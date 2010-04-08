@@ -9,6 +9,9 @@ echo "stalonetray"
 
 [ -f /usr/GNUstep/System/Library/Makefiles/GNUstep.sh ] && . /usr/GNUstep/System/Library/Makefiles/GNUstep.sh
 
+export GIT_AUTHOR_NAME='Andrey'
+export GIT_AUTHOR_EMAIL='a@example.com'
+
 export GOROOT=/home/andrey/projects/go
 export GOOS=linux
 export GOARCH=386
