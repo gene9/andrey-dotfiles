@@ -1,4 +1,4 @@
-;; .emacs
+ ;; .emacs
 
 (load "~/emacs/rc/emacs-system.el")
 (load "~/emacs/rc/emacs-misc.el")
