@@ -104,9 +104,9 @@ set laststatus=2
 
 
 if has("gui_gtk2")
-    set guifont=Console\ 10
+"    set guifont=Console\ 10
 "    set guifont=Fixed\ 10
-"    set guifont=Lucida\ Console\ Semi-Condensed\ 10
+    set guifont=Lucida\ Console\ Semi-Condensed\ 9
 "    set guifont=LucidaTypewriter\ 9
 else
     set guifont=Lucida\_Console:h10:cRUSSIAN
