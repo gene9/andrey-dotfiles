@@ -8,7 +8,7 @@
          (local-file (file-relative-name
                       temp-file
                       (file-name-directory buffer-file-name))))
-    (list "~/bin/eflymake" (list local-file))))
+    (list "~/bin/eflymake.cmd" (list local-file))))
 
 (add-to-list 'flymake-allowed-file-name-masks
              '("\\.erl\\'" flymake-erlang-init))

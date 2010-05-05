@@ -1,3 +1,16 @@
+
+# os
+
+initCygwin() {
+	if [ -f /cygdrive/d/as/emacs/emacs/bin/runemacs.exe ]; then
+		export PATH=/cygdrive/d/as/emacs/emacs/bin:$PATH
+	fi
+}
+
+case "`uname`" in
+	CYGWIN*		) initCygwin ;;
+esac
+
 # notes
 
 echo "stalonetray"
@@ -54,7 +67,7 @@ export NTWP=""
 if [ -f /opt/eHealth/nethealthrc.sh ]; then
 . /opt/eHealth/nethealthrc.sh
 fi
-
+      
 export CMSHOME=/home/cms
 export CMS_NH_DB=oracle
 
