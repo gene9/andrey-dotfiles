@@ -15,8 +15,15 @@
 (load "~/emacs/rc/emacs-factor.el")
 (load "~/emacs/rc/emacs-completion.el")
 (load "~/emacs/rc/emacs-c-c++.el")
-(load "~/emacs/rc/emacs-cedet.el")
-(load "~/emacs/rc/emacs-ecb.el")
+
+(cond 
+	((and (= emacs-major-version 23) (>= emacs-minor-version 2)))
+		(message "WARNING: cedet and ecb are not loaded for this version of Emacs")
+	(t
+		(load "~/emacs/rc/emacs-cedet.el")
+		(load "~/emacs/rc/emacs-ecb.el")))
+
+
 (load "~/emacs/rc/emacs-recentf.el")
 (load "~/emacs/rc/emacs-shell.el")
 (load "~/emacs/rc/emacs-ocaml.el")
