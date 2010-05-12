@@ -8,7 +8,7 @@
          (local-file (file-relative-name
                       temp-file
                       (file-name-directory buffer-file-name))))
-    (list "~/bin/eflymake.cmd" (list local-file))))
+    (list "~/bin/eflymake.bat" (list local-file))))
 
 (add-to-list 'flymake-allowed-file-name-masks
              '("\\.erl\\'" flymake-erlang-init))
@@ -17,14 +17,14 @@
 
 (setq flymake-allowed-file-name-masks 
   '(
-    ("\\.xml\\'" flymake-xml-init)
-    ("\\.html?\\'" flymake-xml-init)
-    ("\\.p[ml]\\'" flymake-perl-init)
-    ("\\.php[345]?\\'" flymake-php-init)
+    ;;("\\.xml\\'" flymake-xml-init)
+    ;;("\\.html?\\'" flymake-xml-init)
+    ;;("\\.p[ml]\\'" flymake-perl-init)
+    ;;("\\.php[345]?\\'" flymake-php-init)
     ;;("\\.h\\'" flymake-master-make-header-init flymake-master-cleanup)
     ;;("\\.java\\'" flymake-simple-make-java-init flymake-simple-java-cleanup)
-    ("[0-9]+\\.tex\\'" flymake-master-tex-init flymake-master-cleanup)
-    ("\\.tex\\'" flymake-simple-tex-init)
+    ;;("[0-9]+\\.tex\\'" flymake-master-tex-init flymake-master-cleanup)
+    ;;("\\.tex\\'" flymake-simple-tex-init)
     ("\\.erl\\'" flymake-erlang-init)
     ;;("\\.idl\\'" flymake-simple-make-init)
     ;; ("\\.cpp\\'" 1)
