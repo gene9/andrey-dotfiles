@@ -1,7 +1,7 @@
-9
+10
 
 dir
-91
+94
 http://distel.googlecode.com/svn/trunk/doc
 http://distel.googlecode.com/svn
 
@@ -12,7 +12,7 @@ http://distel.googlecode.com/svn
 mats.cronqvist
 
 
-svn:special svn:externals svn:needs-lock
+
 
 
 

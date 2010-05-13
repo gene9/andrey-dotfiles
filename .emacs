@@ -18,7 +18,7 @@
 
 (cond 
 	((and (= emacs-major-version 23) (>= emacs-minor-version 2)))
-		(message "WARNING: cedet and ecb are not loaded for this version of Emacs")
+		(t)
 	(t
 		(load "~/emacs/rc/emacs-cedet.el")
 		(load "~/emacs/rc/emacs-ecb.el")))

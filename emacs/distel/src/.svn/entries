@@ -1,18 +1,18 @@
-9
+10
 
 dir
-91
+94
 http://distel.googlecode.com/svn/trunk/src
 http://distel.googlecode.com/svn
 
 
 
-2009-05-05T10:09:21.881037Z
-91
+2009-12-13T22:11:50.193668Z
+94
 mats.cronqvist
 
 
-svn:special svn:externals svn:needs-lock
+
 
 
 
@@ -32,11 +32,33 @@ file
 
 
 
-2008-08-19T11:53:38.179853Z
-18a59d7423e6a244ca9cc108e3042412
-2008-07-31T13:46:23.976897Z
-71
+2010-05-13T19:56:46.000000Z
+9529b33a37c1eea38b3dc87817897d97
+2009-12-13T22:11:50.193668Z
+94
 mats.cronqvist
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8871
 
 distel.erl
 file
@@ -44,10 +66,10 @@ file
 
 
 
-2009-05-07T08:40:44.689338Z
-7f9175963fb597175313d64c9a1551dc
-2009-05-05T10:09:21.881037Z
-91
+2010-05-13T19:56:46.000000Z
+1977ebf851b906e6817c0590066c2b5b
+2009-12-13T22:11:50.193668Z
+94
 mats.cronqvist
 
 
@@ -70,7 +92,7 @@ mats.cronqvist
 
 
 
-33418
+33454
 
 otp_doc.erl
 file

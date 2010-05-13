@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 22
-/svn/!svn/ver/91/trunk
+/svn/!svn/ver/94/trunk
 END
 AUTHORS
 K 25
@@ -19,7 +19,7 @@ ChangeLog
 K 25
 svn:wc:ra_dav:version-url
 V 32
-/svn/!svn/ver/83/trunk/ChangeLog
+/svn/!svn/ver/94/trunk/ChangeLog
 END
 INSTALL.WIN32
 K 25
@@ -49,5 +49,5 @@ Makefile
 K 25
 svn:wc:ra_dav:version-url
 V 31
-/svn/!svn/ver/74/trunk/Makefile
+/svn/!svn/ver/92/trunk/Makefile
 END
