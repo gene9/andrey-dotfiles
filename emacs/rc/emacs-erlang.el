@@ -4,6 +4,8 @@
     (add-to-list 'load-path "/usr/lib/erlang/lib/tools-2.6.5.1/emacs")
 ;;)
 
+(setq erlang-root-dir "/usr/lib/erlang")
+
 (add-to-list 'load-path "~/emacs/distel/elisp")
 
 (require 'distel)

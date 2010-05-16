@@ -13,7 +13,9 @@ esac
 
 # notes
 
-echo "stalonetray"
+echo "zeromq"
+echo "wmaker + p"
+echo "ad serve"
 
 # Home stuff
 # FIXME: does not work for some reason
