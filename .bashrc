@@ -2,13 +2,17 @@
 # os
 
 initCygwin() {
-	if [ -f /cygdrive/d/as/emacs/emacs/bin/runemacs.exe ]; then
-		export PATH=/cygdrive/d/as/emacs/emacs/bin:$PATH
-	fi
+    if [ -f /cygdrive/d/as/emacs/emacs/bin/runemacs.exe ]; then
+        export PATH=/cygdrive/d/as/emacs/emacs/bin:$PATH
+    fi
 }
 
+CYGWIN_=no
+
 case "`uname`" in
-	CYGWIN*		) initCygwin ;;
+    CYGWIN*     )
+        CYGWIN_=yes
+        initCygwin ;;
 esac
 
 # notes
@@ -59,7 +63,9 @@ fi
 
 export PS1="[\u@\h \w]# "
 
-[ -f /etc/bash_completion ] && . /etc/bash_completion
+if [ CYGWIN_ == "no" ]; then
+    [ -f /etc/bash_completion ] && . /etc/bash_completion
+fi
 
 export NTWU="nanotw"
 export NTWP=""
