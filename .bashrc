@@ -17,6 +17,10 @@ esac
 
 # notes
 
+#if [ ${CYGWIN_} != "yes" ]; then
+#    [ -f ~/.plan ] && cat ~/.plan
+#fi
+
 echo "zeromq"
 echo "wmaker + p"
 echo "ad serve"
