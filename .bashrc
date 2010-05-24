@@ -59,6 +59,18 @@ fi
 
 export PS1="[\u@\h \w]# "
 
+cd () {
+	builtin cd $@
+
+	S=`git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'` 
+
+	if [ x"$S" != x ]; then
+		export PS1="[\u@\h \w] *${S}* # "
+	else
+		export PS1="[\u@\h \w]# "
+	fi
+}     
+
 [ -f /etc/bash_completion ] && . /etc/bash_completion
 
 export NTWU="nanotw"
@@ -109,7 +121,7 @@ else
         export VIM=/home/eng/asidorenko/vim/vim62
     fi
 fi
-
+              
 alias wsc="cd /vobs/wsCore"
 alias wsa="cd /vobs/wsApps"
 alias cdf="cd /vobs/frameworks/cdf"
@@ -161,7 +173,7 @@ forcemerge() {
     done
 
 }
-
+                    
 amerge() {
     echo "Merging all checked out files in current dir"
 
