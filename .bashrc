@@ -2,16 +2,24 @@
 # os
 
 initCygwin() {
-	if [ -f /cygdrive/d/as/emacs/emacs/bin/runemacs.exe ]; then
-		export PATH=/cygdrive/d/as/emacs/emacs/bin:$PATH
-	fi
+    if [ -f /cygdrive/d/as/emacs/emacs/bin/runemacs.exe ]; then
+        export PATH=/cygdrive/d/as/emacs/emacs/bin:$PATH
+    fi
 }
 
+CYGWIN_=no
+
 case "`uname`" in
-	CYGWIN*		) initCygwin ;;
+    CYGWIN*     )
+        CYGWIN_=yes
+        initCygwin ;;
 esac
 
 # notes
+
+#if [ ${CYGWIN_} != "yes" ]; then
+#    [ -f ~/.plan ] && cat ~/.plan
+#fi
 
 echo "zeromq"
 echo "wmaker + p"
@@ -71,7 +79,9 @@ cd () {
 	fi
 }     
 
-[ -f /etc/bash_completion ] && . /etc/bash_completion
+if [ CYGWIN_ == "no" ]; then
+    [ -f /etc/bash_completion ] && . /etc/bash_completion
+fi
 
 export NTWU="nanotw"
 export NTWP=""
