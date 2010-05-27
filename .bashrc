@@ -31,6 +31,11 @@ echo "ad serve"
 
 [ -f /usr/GNUstep/System/Library/Makefiles/GNUstep.sh ] && . /usr/GNUstep/System/Library/Makefiles/GNUstep.sh
 
+if [ -d /usr/java/jdk1.6.0_06 ]; then
+	export JAVA_HOME=/usr/java/jdk1.6.0_06
+	export PATH=/usr/java/jdk1.6.0_06/bin:$PATH
+fi
+
 export GIT_AUTHOR_NAME='gene9'
 export GIT_AUTHOR_EMAIL='a@example.com'
 
