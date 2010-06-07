@@ -84,7 +84,9 @@ cd () {
 	fi
 }     
 
-if [ CYGWIN_ == "no" ]; then
+if [ CYGWIN_ == "yes" ]; then
+	x=1
+else
     [ -f /etc/bash_completion ] && . /etc/bash_completion
 fi
 
