@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# brown
+C1=8C6442
+
+# blueish
+C2=473F59
+
+case $1 in
+	1)
+		gconftool-2 -t str --set /desktop/gnome/background/primary_color "#${C1}";;
+		#gconftool-2 -t str --set /desktop/gnome/background/picture_filename "/home/derrick/wallpaper/Solar_3200x1200_SunRiseTime.png";;
+	2)
+		gconftool-2 -t str --set /desktop/gnome/background/primary_color "#${C2}";;
+	*)
+		echo "Usage: me.sh [1|2]";;
+esac
+

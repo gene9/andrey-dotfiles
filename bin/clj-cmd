@@ -1,0 +1,6 @@
+#!/bin/sh -e
+if [ "$CLJ_CMD" == "" ]; then
+    echo Define a Clojure startup command
+else
+    $CLJ_CMD
+fi

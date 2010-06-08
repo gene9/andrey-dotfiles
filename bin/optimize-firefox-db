@@ -1,0 +1,5 @@
+#!/bin/sh
+
+find ~/.mozilla/firefox -type f -name "*.sqlite" -exec time sqlite3 \{\} "VACUUM" ";"
+
+

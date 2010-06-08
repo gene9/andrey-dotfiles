@@ -1,0 +1,6 @@
+#!/bin/sh
+
+rm -f ~/.xinitrc
+xrdb -merge ~/.Xdefaults
+startx &
+
