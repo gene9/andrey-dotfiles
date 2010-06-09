@@ -17,11 +17,11 @@
 (load "~/emacs/rc/emacs-c-c++.el")
 
 (cond 
-	((and (= emacs-major-version 23) (>= emacs-minor-version 2)))
-		(t)
-	(t
-		(load "~/emacs/rc/emacs-cedet.el")
-		(load "~/emacs/rc/emacs-ecb.el")))
+    ((and (= emacs-major-version 23) (>= emacs-minor-version 2)))
+        (t)
+    (t
+        (load "~/emacs/rc/emacs-cedet.el")
+        (load "~/emacs/rc/emacs-ecb.el")))
 
 
 (load "~/emacs/rc/emacs-recentf.el")
@@ -38,6 +38,8 @@
 (load "~/emacs/rc/emacs-daemon.el")
 
 (load "~/emacs/rc/emacs-file-editing.el")
+
+(load "~/emacs/rc/emacs-pretty-lambda.el")
 
 ;; have to be last one
 (load "~/emacs/rc/emacs-keyboard.el")

@@ -130,15 +130,15 @@ alias l="ls"
 alias ll="ls -l"
 alias Grep="grep"
 
-if [ `uname` == "HP-UX" ]; then
-    alias vim="/usr/local/bin/gvim"
-else
-    if [ `uname` != "Linux" ]; then
-        alias vim="/home/eng/asidorenko/vim/vim -g"
-        export VIM=/home/eng/asidorenko/vim/vim62
-    fi
-fi
-              
+#if [ `uname` == "HP-UX" ]; then
+#    alias vim="/usr/local/bin/gvim"
+#else
+#    if [ `uname` != "Linux" ]; then
+#        alias vim="/home/eng/asidorenko/vim/vim -g"
+#        export VIM=/home/eng/asidorenko/vim/vim62
+#    fi
+#fi
+
 alias wsc="cd /vobs/wsCore"
 alias wsa="cd /vobs/wsApps"
 alias cdf="cd /vobs/frameworks/cdf"
@@ -150,11 +150,11 @@ alias ora="cd /vobs/wsCore/oracle"
 history_control=ignoredups
 
 
-if [ `uname` == "HP-UX" ]; then
-    export PATH=$PATH:/home/cms/bin:/home/cms/bin/hpUx.11.0:/usr/atria/bin:/home/dmz/asidorenko/bin:/home/tools/bin
-else
-    export PATH=$PATH:/home/cms/bin:/home/cms/bin/sunOs.5.4:/usr/atria/bin:/home/dmz/asidorenko/bin:/home/tools/bin:/home/dmz/asidorenko/pytho/bin
-fi
+#if [ `uname` == "HP-UX" ]; then
+#    export PATH=$PATH:/home/cms/bin:/home/cms/bin/hpUx.11.0:/usr/atria/bin:/home/dmz/asidorenko/bin:/home/tools/bin
+#else
+#    export PATH=$PATH:/home/cms/bin:/home/cms/bin/sunOs.5.4:/usr/atria/bin:/home/dmz/asidorenko/bin:/home/tools/bin:/home/dmz/asidorenko/pytho/bin
+#fi
 
 if [ -z $CLEARCASE_ROOT ]; then
     export PS1='[\u@\h:\W]$ '
