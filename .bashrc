@@ -16,7 +16,6 @@ case "`uname`" in
 esac
 
 # notes
-
 #if [ ${CYGWIN_} != "yes" ]; then
 #    [ -f ~/.plan ] && cat ~/.plan
 #fi
