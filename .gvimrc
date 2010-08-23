@@ -1,4 +1,8 @@
 
+" enable nerd tree - C-F12
+imap <C-F12> <esc>:NERDTreeToggle<CR><ins>
+map <C-F12> :NERDTreeToggle<CR>
+
 " Set omni menu colors
 hi Pmenu guibg=#333333
 hi PmenuSel guibg=#555555 guifg=#ffffff
