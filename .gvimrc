@@ -1,4 +1,12 @@
 
+" Alt-N to switch between tabs
+map <M-1> :tabn 1<CR>
+map <M-2> :tabn 2<CR>
+map <M-3> :tabn 3<CR>
+map <M-4> :tabn 4<CR>
+map <M-5> :tabn 5<CR>
+map <M-6> :tabn 6<CR>
+
 " enable nerd tree - C-F12
 imap <C-F12> <esc>:NERDTreeToggle<CR><ins>
 map <C-F12> :NERDTreeToggle<CR>
@@ -149,6 +157,10 @@ imap <silent> <C-a> <C-o>gg<c-o>vG<end>
 "this rule really applys to everything.
 "highlight RedundantSpaces term=standout ctermbg=red guibg=red
 "match RedundantSpaces /\s\+$\| \+\ze\t/
+
+" set color of selected tab
+hi TabLineSel	guifg=#ff0000	guibg=NONE	gui=NONE
+"hi TabLineFill	guifg=#ff0000	guibg=NONE	gui=NONE
 
 " EOF
             
