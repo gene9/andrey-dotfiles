@@ -1,4 +1,8 @@
 
+# virtualenv
+export WORKON_HOME=$HOME/.virtualenvs
+source $HOME/.virtualenvwrapper
+
 # os
 
 initCygwin() {
