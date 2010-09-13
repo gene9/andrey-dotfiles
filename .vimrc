@@ -1,3 +1,5 @@
+set nocompatible
+
 set mousemodel=popup 
 
 nmap <PageUp> <C-S-U><C-S-U>
