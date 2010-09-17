@@ -1,7 +1,7 @@
 
 # virtualenv
 export WORKON_HOME=$HOME/.virtualenvs
-source $HOME/.virtualenvwrapper
+[ -e .virtualenvwrapper ] && source $HOME/.virtualenvwrapper
 
 # os
 
