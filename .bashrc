@@ -1,7 +1,7 @@
 
 # virtualenv
 export WORKON_HOME=$HOME/.virtualenvs
-source $HOME/.virtualenvwrapper
+[ -e .virtualenvwrapper ] && source $HOME/.virtualenvwrapper
 
 # os
 
@@ -11,13 +11,25 @@ initCygwin() {
     fi
 }
 
+initMingw() {
+    export PATH=$PATH:/d/as/MingW32/bin
+
+    if [ -f /d/as/emacs/emacs/bin/runemacs.exe ]; then
+        export PATH=/d/as/emacs/emacs/bin:$PATH
+    fi
+}
+
 CYGWIN_=no
 
 case "`uname`" in
     CYGWIN*     )
         CYGWIN_=yes
         initCygwin ;;
+    MINGW*     )
+        initMingw ;;
 esac
+
+echo $PATH
 
 # notes
 
@@ -36,8 +48,8 @@ echo "ad serve"
 [ -f /usr/GNUstep/System/Library/Makefiles/GNUstep.sh ] && . /usr/GNUstep/System/Library/Makefiles/GNUstep.sh
 
 if [ -d /usr/java/jdk1.6.0_06 ]; then
-	export JAVA_HOME=/usr/java/jdk1.6.0_06
-	export PATH=/usr/java/jdk1.6.0_06/bin:$PATH
+    export JAVA_HOME=/usr/java/jdk1.6.0_06
+    export PATH=/usr/java/jdk1.6.0_06/bin:$PATH
 fi
 
 export GIT_AUTHOR_NAME='gene9'
@@ -77,19 +89,19 @@ fi
 export PS1="[\u@\h \w]# "
 
 cd () {
-	builtin cd $@
+    builtin cd $@
 
-	S=`git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'` 
+    S=`git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'` 
 
-	if [ x"$S" != x ]; then
-		export PS1="[\u@\h \w] *${S}* # "
-	else
-		export PS1="[\u@\h \w]# "
-	fi
+    if [ x"$S" != x ]; then
+        export PS1="[\u@\h \w] *${S}* # "
+    else
+        export PS1="[\u@\h \w]# "
+    fi
 }     
 
 if [ CYGWIN_ == "yes" ]; then
-	x=1
+    x=1
 else
     [ -f /etc/bash_completion ] && . /etc/bash_completion
 fi

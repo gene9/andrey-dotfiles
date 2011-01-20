@@ -7,8 +7,12 @@
 
 (if (and (boundp 'window-system) window-system)
     (when (string-match "XEmacs" emacs-version)
-       	(if (not (and (boundp 'mule-x-win-initted) mule-x-win-initted))
+        (if (not (and (boundp 'mule-x-win-initted) mule-x-win-initted))
             (require 'sym-lock))
-       	(require 'font-lock)))
+        (require 'font-lock)))
+
+(setq tuareg-default-indent 2)
+(setq tuareg-with-indent 2)
+(setq tuareg-|-extra-unindent 2)
 
 ;; --
