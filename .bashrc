@@ -53,7 +53,7 @@ export SVN_EDITOR=gvim
 
 export PATH=~/bin:/usr/lib/erlang/bin:$PATH
 export PATH=~/bin/dmd/linux/bin:$PATH
-#export PATH=~/projects/llvm/Debug/bin:$PATH
+export PATH=~/.cabal/bin:$PATH
 
 export PATH=~/android-sdk-linux_x86-1.5_r1/tools:$PATH
 
