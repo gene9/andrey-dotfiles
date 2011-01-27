@@ -1,7 +1,7 @@
 
 ;;(if (eq system-type 'windows-nt)
-    (add-to-list 'load-path "D:/as/erlang/lib/tools-2.6.5.1/emacs")
-    (add-to-list 'load-path "/usr/lib/erlang/lib/tools-2.6.5.1/emacs")
+    (add-to-list 'load-path "D:/as/erlang/lib/tools-2.6.6.1/emacs")
+    (add-to-list 'load-path "/usr/lib/erlang/lib/tools-2.6.6.1/emacs")
 ;;)
 
 (setq erlang-root-dir "/usr/lib/erlang")

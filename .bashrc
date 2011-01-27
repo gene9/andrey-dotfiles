@@ -29,8 +29,6 @@ case "`uname`" in
         initMingw ;;
 esac
 
-echo $PATH
-
 # notes
 
 #if [ ${CYGWIN_} != "yes" ]; then

@@ -48,6 +48,8 @@
     (when (file-exists-p fname)
         (load fname)))
 
+(setq frame-title-format '("" "%b | %f"))
+
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End: 
