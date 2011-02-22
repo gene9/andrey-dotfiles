@@ -1,4 +1,7 @@
 
+" mark 81st column with color
+set colorcolumn=81
+
 " Alt-N to switch between tabs
 map <M-1> :tabn 1<CR>
 map <M-2> :tabn 2<CR>
