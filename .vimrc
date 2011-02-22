@@ -137,7 +137,7 @@ if has('gui_running')
         set columns=81
 "   endif
 else
-    set lines=90
+    set lines=60
     set columns=80
 endif
 
