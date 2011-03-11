@@ -1,6 +1,8 @@
 
 " mark 81st column with color
-set colorcolumn=81
+if version > 702
+	set colorcolumn=81
+endif
 
 " Alt-N to switch between tabs
 map <M-1> :tabn 1<CR>
