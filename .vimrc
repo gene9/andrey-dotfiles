@@ -138,6 +138,10 @@ if has('gui_running')
 "   endif
 endif
 
+let hostname = hostname()
+if hostname =~ "ubuntu"
+    set guifont=DejaVu\ Sans\ Mono\ 9
+endif
 
 "flag problematic whitespace (trailing and spaces before tabs)
 "Note you get the same by doing let c_space_errors=1 but
