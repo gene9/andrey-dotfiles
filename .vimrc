@@ -136,9 +136,6 @@ if has('gui_running')
         set lines=65
         set columns=81
 "   endif
-else
-    set lines=60
-    set columns=80
 endif
 
 
