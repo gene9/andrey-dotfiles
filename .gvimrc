@@ -11,7 +11,10 @@ let g:Fi_Flags = { "arrow" : [icons_path."16.png", "> ", 1, "texthl=Title"],
 map <F1> :FlagIt arrow<CR>
 map <C-F1> :UnFlag arrow<CR>
 
-" ==============<<<<<
+" mark 81st column with color
+if version > 702
+	set colorcolumn=81
+endif
 
 " Alt-N to switch between tabs
 map <M-1> :tabn 1<CR>
