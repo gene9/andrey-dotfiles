@@ -1,4 +1,7 @@
 
+# git
+export GIT_SSH=ssh
+
 # virtualenv
 export WORKON_HOME=$HOME/.virtualenvs
 [ -e .virtualenvwrapper ] && source $HOME/.virtualenvwrapper

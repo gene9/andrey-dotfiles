@@ -1,4 +1,18 @@
 
+let g:Fi_OnlyText = 1
+
+let icons_path = "/home/paul/.vim/signs/"
+let g:Fi_Flags = { "arrow" : [icons_path."16.png", "> ", 1, "texthl=Title"],
+			\ "function" : [icons_path."17.png", "+ ", 0, "texthl=Comment"],
+			\ "warning" : [icons_path."8.png", "! ", 0, "texthl=WarningMsg"],
+			\ "error" : [icons_path."4.png", "XX", "true", "texthl=ErrorMsg linehl=ErrorMsg"],
+			\ "step" : [icons_path."5.png", "..", "true", ""] }
+
+map <F1> :FlagIt arrow<CR>
+map <C-F1> :UnFlag arrow<CR>
+
+" ==============<<<<<
+
 " Alt-N to switch between tabs
 map <M-1> :tabn 1<CR>
 map <M-2> :tabn 2<CR>

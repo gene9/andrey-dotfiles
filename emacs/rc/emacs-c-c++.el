@@ -8,7 +8,7 @@
         (setq c-basic-offset 4)
         (c-set-offset 'substatement-open 0)
         (c-set-style "stroustrup")
-        (c-toggle-auto-hungry-state 0) ;; Whenever you type certain characters, a newline will NOT be inserted automatically.
+        (c-toggle-auto-hungry-state -1)
         (local-set-key "\C-c:" 'uncomment-region)
         (local-set-key "\C-c;" 'comment-region)
         (font-lock-add-keywords nil '(("\\<\\(FIXME\\|TODO\\|BUG\\):" 1 font-lock-warning-face t)))
