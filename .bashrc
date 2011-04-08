@@ -90,7 +90,7 @@ fi
 export PS1="[\u@\h \w]# "
 
 cd () {
-    builtin cd $@
+    builtin cd "$*";
 
     S=`git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'` 
 
